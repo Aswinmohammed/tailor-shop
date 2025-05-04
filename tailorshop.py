@@ -12,7 +12,7 @@ class TailorShopApp:
         self.root = root
         self.root.title("JR FASHION MART")
         self.root.geometry("400x520")
-        self.excel_file = r"D:/tailor_shop_orders.xlsx"
+        self.excel_file = r"D:\Tailor_Shop\tailor_shop_orders.xlsx"
         self.orders = {}
         self.load_orders()
 
@@ -31,7 +31,7 @@ class TailorShopApp:
         expense_income_menu.add_command(label="Expenses & Income", command=self.show_expense_income_window)
 
         # Correctly specify the path to your background image
-        background_image_path = r"D:/img.jpeg"
+        background_image_path = r"D:\Tailor_Shop\img.jpeg"
 
         # Load and set the background image using CTkImage
         self.background_image = CTkImage(dark_image=Image.open(background_image_path), size=(400, 520))
